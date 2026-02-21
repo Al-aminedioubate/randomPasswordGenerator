@@ -27,6 +27,7 @@ input{
     border-color: black;
     border-style: 2px solid;
     background-color: lightpink;
+    font-size: large;
 }
 
 button{
