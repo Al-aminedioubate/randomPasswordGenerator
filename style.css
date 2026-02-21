@@ -11,6 +11,14 @@ body{
     flex-direction: column;
     width: 600px;
     height: 300px;
-    margin: 20px;
-    padding: 20px;
+}
+
+input{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-color: black;
+    border-style: 2px solid;
 }
