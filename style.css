@@ -22,3 +22,18 @@ input{
     border-color: black;
     border-style: 2px solid;
 }
+
+button{
+    width: 120px;
+    height: 40px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: green;
+}
