@@ -22,10 +22,9 @@ function generatePassword(length = 14) {
 	for (let i = 0; i < length; i++) {
 		let randomIndex = Math.floor(Math.random() * allCharacters.length);
 		randomPassword += allCharacters[randomIndex];
-
-        
 	}
+	password.value = randomPassword;
 	console.log("my password is :" + randomPassword);
 }
 
-generatePassword();
+
