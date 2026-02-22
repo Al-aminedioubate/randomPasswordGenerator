@@ -10,19 +10,20 @@ const Characters = {
 	Symbols: "~!@#$%^&*()_+{}[].,:;|",
 };
 
-let randomPassword;
-
 //Creons une fonction permettant de generer aleatoirement les mots de passe
-function generatePassword(length = 12) {
+function generatePassword(length = 14) {
+	let randomPassword = "";
 	const allCharacters =
 		Characters.Uppercase +
 		Characters.Lowercase +
 		Characters.Numbers +
 		Characters.Symbols;
 
-	for (i = 0; i < length; i++) {
+	for (let i = 0; i < length; i++) {
 		let randomIndex = Math.floor(Math.random() * allCharacters.length);
 		randomPassword += allCharacters[randomIndex];
+
+        
 	}
 	console.log("my password is :" + randomPassword);
 }
