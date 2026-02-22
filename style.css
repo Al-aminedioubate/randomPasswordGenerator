@@ -47,7 +47,7 @@ button:hover{
     border-color: black;
     border-style: 2px solid;
     background-color: lightpink;
-    font-size: large;
+    font-size: 30px;
 }
 
 #copyIcon {
@@ -56,5 +56,5 @@ button:hover{
   top: 40%;
   transform: translateY(-50%);
   cursor: pointer;
-  font-size: large;
+  font-size: 30px;
 }
