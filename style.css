@@ -52,7 +52,7 @@ button:hover{
 
 #copyIcon {
   position: absolute;
-  right: -170px;
+  right: -190px;
   top: 40%;
   transform: translateY(-50%);
   cursor: pointer;
