@@ -21,6 +21,13 @@ function generatePassword(length = 14) {
 		Characters.Numbers +
 		Characters.Symbols;
 
+	if (length > allCharacters.length) {
+		alert("Erreur: longueur trop grande");
+	}
+
+	//evitons la repetition dans le mot de passe generer
+	let noRepate = allCharacters.split("");
+
 	for (let i = 0; i < length; i++) {
 		let randomIndex = Math.floor(Math.random() * allCharacters.length);
 		randomPassword += allCharacters[randomIndex];
