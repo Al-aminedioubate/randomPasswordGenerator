@@ -31,3 +31,9 @@ function generatePassword(length = 14) {
 btn.addEventListener("click", () => {
 	generatePassword();
 });
+
+//Evenement permettant de copier le mot de passe
+copyPassword.addEventListener("click", () => {
+	navigator.clipboard.writeText(password.value);
+	alert("Text copié !!!");
+});
