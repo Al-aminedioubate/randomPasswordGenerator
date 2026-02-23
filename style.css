@@ -58,3 +58,22 @@ button:hover{
   cursor: pointer;
   font-size: 30px;
 }
+
+/*Section alert style*/
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  transform: translateY(20px);
+}
+
+#toast.show {
+  opacity: 1;
+   transform: translateY(0);
+}

@@ -3,6 +3,8 @@ let password = document.getElementById("passwordInput");
 let copyPassword = document.getElementById("copyIcon");
 let btn = document.getElementById("genePassword-btn");
 
+const toast = document.getElementById("toast");
+
 const Characters = {
 	Uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 	Lowercase: "abcdefghijklmnopqrstuvwxyz",
@@ -35,5 +37,10 @@ btn.addEventListener("click", () => {
 //Evenement permettant de copier le mot de passe
 copyPassword.addEventListener("click", () => {
 	navigator.clipboard.writeText(password.value);
-	alert("Text copié !!!");
+	toast.textContent = `${password.value}  Copied`;
+	toast.classList.add("show");
+
+	setTimeout(() => {
+		toast.classList.remove("show");
+	}, 2000);
 });
