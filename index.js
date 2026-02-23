@@ -23,8 +23,11 @@ function generatePassword(length = 14) {
 		let randomIndex = Math.floor(Math.random() * allCharacters.length);
 		randomPassword += allCharacters[randomIndex];
 	}
+
 	password.value = randomPassword;
-	console.log("my password is :" + randomPassword);
 }
 
-
+//Evenement permettant de generer les mots de passe.
+btn.addEventListener("click", () => {
+	generatePassword();
+});
