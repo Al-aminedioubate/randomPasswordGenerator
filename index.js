@@ -25,6 +25,7 @@ function generatePassword(length = 14) {
 		alert("Erreur: longueur trop grande");
 	}
 
+	//Methode avec repetition
 	/*for (let i = 0; i < length; i++) {
 		let randomIndex = Math.floor(Math.random() * allCharacters.length);
 		randomPassword += allCharacters[randomIndex];
