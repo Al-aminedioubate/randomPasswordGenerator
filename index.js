@@ -31,7 +31,7 @@ function generatePassword(length = 14) {
 		randomPassword += allCharacters[randomIndex];
 	}*/
 
-	//evitons la repetition dans le mot de passe generer
+	//Methode sans repetition
 	let noRepate = allCharacters.split("");
 
 	for (let i = noRepate.length - 1; i > 0; i--) {
