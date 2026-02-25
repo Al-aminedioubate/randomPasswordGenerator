@@ -5,6 +5,7 @@ let btn = document.getElementById("genePassword-btn");
 
 const toast = document.getElementById("toast");
 
+//Creation de l'objet gerant les types de caractere a generer
 const Characters = {
 	Uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 	Lowercase: "abcdefghijklmnopqrstuvwxyz",
