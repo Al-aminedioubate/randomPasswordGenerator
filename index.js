@@ -25,18 +25,20 @@ function generatePassword(length = 14) {
 		alert("Erreur: longueur trop grande");
 	}
 
+	/*for (let i = 0; i < length; i++) {
+		let randomIndex = Math.floor(Math.random() * allCharacters.length);
+		randomPassword += allCharacters[randomIndex];
+	}*/
+
 	//evitons la repetition dans le mot de passe generer
 	let noRepate = allCharacters.split("");
 
 	for (let i = noRepate.length - 1; i > 0; i--) {
 		let j = Math.floor(Math.random() * i + 1);
-		[noRepate[j], noRepate[i]] = [noRepate[i], noRepate[j]];
+		[noRepate[i], noRepate[j]] = [noRepate[j], noRepate[i]];
 	}
 
-	for (let i = 0; i < length; i++) {
-		let randomIndex = Math.floor(Math.random() * allCharacters.length);
-		randomPassword += allCharacters[randomIndex];
-	}
+	randomPassword = noRepate.slice(0, length).join("");
 
 	password.value = randomPassword;
 }
