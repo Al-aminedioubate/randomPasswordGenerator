@@ -59,7 +59,7 @@ button:hover{
   font-size: 30px;
 }
 
-
+/*Section alert style*/
 #toast {
   position: fixed;
   bottom: 20px;
